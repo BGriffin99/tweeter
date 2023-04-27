@@ -15,10 +15,21 @@ html {
  */
 
 body {
+  font-family: 'Source Sans Pro', sans-serif;
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
 }
+
+
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f4f1ec;
+    
+}
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions

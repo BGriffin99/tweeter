@@ -1,0 +1,47 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+  }
+  
+  /* Grid item for the navbar */
+  nav {
+    position: fixed;
+    background-color: #4056A1;
+    color: #FFFFFF;
+    font-family: Bungee, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5em;
+  }
+  
+  /* Grid item for the main content */
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Grid item for the "Write a new tweet" button */
+  .new-tweet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #4056A1;
+    color: #FFFFFF;
+    padding: 1.5em;
+    cursor: pointer;
+  }
+  
+  .new-tweet:hover {
+    background-color: #3A4E94;
+  }
+  
+  .new-tweet i {
+    margin-bottom: 0.5em;
+  }

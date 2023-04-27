@@ -1,0 +1,42 @@
+.new-tweet form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .new-tweet label {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .new-tweet textarea {
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 16px;
+  }
+  
+  .new-tweet button[type="submit"] {
+    background-color: #1da1f2;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .new-tweet .counter {
+    font-size: 16px;
+    margin-left: 10px;
+    color: gray;
+  }

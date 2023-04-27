@@ -1,0 +1,36 @@
+header {
+    height: calc(100vh - 60px); /* Subtract the height of the nav bar */
+    width: 100%;
+    background-color: #0f0a5f; /* Change this to the desired background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  header div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header div:first-child img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  header div:last-child {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  header div:last-child h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+  }
