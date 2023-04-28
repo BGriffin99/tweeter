@@ -1,15 +1,15 @@
 .tweet:hover {
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 8px rgba(201, 188, 188, 0.25);
   }
   
   .tweet:hover .icons i {
-    color: blue;
+    color: #980caa;
   }
 
 .tweet {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: r#2e0455;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 0px 5px grey;
@@ -18,7 +18,7 @@
   
   .tweet header {
     display: flex;
-    align-items: center;
+    align-items: align-left;
     margin-bottom: 10px;
   }
   
@@ -67,6 +67,19 @@
     cursor: pointer;
   }
   
-  .tweet .icons i:hover {
-    color: blue;
+  .tweet .tweet-actions i:hover {
+    color: #980caa;
+  }
+
+  .tweet .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+ .tweet .avatar {
+    margin-right: 10px;
+  }
+  
+  .tweet.user-handle {
+    margin-left: auto;
   }

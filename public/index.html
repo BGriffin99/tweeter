@@ -17,14 +17,19 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/error.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweet-container.css" type="text/css" /> 
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+
+     <!-- library -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/2.0.2/timeago.min.js" integrity="sha512-sl01o/gVwybF1FNzqO4NDRDNPJDupfN0o2+tMm4K2/nr35FjGlxlvXZ6kK6faa9zhXbnfLIXioHnExuwJdlTMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
-    <!-- library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.6.7/jquery.timeago.min.js" integrity="sha512-RlGrSmkje9EE/FXpJKWf0fvOlg4UULy/blvNsviBX9LFwMj/uewXVoanRbxTIRDXy/0A3fBQppTmJ/qOboJzmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
   </head>
 
   <body>
@@ -36,13 +41,13 @@
     </div>
     </nav>
 
-    <header>
+    <header class="my-header">
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
       <br>
       <div>
-          <h2>Your Name</h2>
+          <h2>Brady Griffin</h2>
       </div>
   </header>
 
@@ -50,25 +55,30 @@
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form action="/tweets/" method="POST">
+        <form action="/tweets/" method="POST" id="new-tweet-form">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
-          <div>
+          <div id="error-container"></div>
             <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+            <output name="counter" class="counter" for="tweet-text" style="text-align: right;">140</output>
           </div>
         </form>
         <section class="tweets-container">
           <article class="tweet">
             <header>
               <img src="https://i.imgur.com/73hZDYK.png" alt="User Avatar">
-              <h3>John Doe</h3>
-              <span>@johndoe</span>
+              <div>
+                <h3>John Doe</h3>
+                <span>@johndoe</span>
+              </div>
+              <span class="handle">@johndoe</span>
             </header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="tweet-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
             <footer>
               <span>10 days ago</span>
-              <div class="icons">
+              <div class="icons" style="text-align: right;">
                 <i class="fas fa-flag"></i>
                 <i class="fas fa-retweet"></i>
                 <i class="fas fa-heart"></i>

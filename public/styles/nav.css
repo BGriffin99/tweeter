@@ -8,7 +8,10 @@ body {
   /* Grid item for the navbar */
   nav {
     position: fixed;
-    background-color: #4056A1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2e0455;
     color: #FFFFFF;
     font-family: Bungee, sans-serif;
     display: flex;
@@ -32,14 +35,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #4056A1;
+    background-color: #2e0455;
     color: #FFFFFF;
     padding: 1.5em;
     cursor: pointer;
   }
   
   .new-tweet:hover {
-    background-color: #3A4E94;
+    background-color: #2e0455;
   }
   
   .new-tweet i {

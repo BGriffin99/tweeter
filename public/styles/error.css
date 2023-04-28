@@ -1,0 +1,8 @@
+#error-container {
+    display: none;
+    background-color: #F8D7DA;
+    color: #721C24;
+    padding: 10px;
+    border: 1px solid #F5C6CB;
+    margin-bottom: 10px;
+  }

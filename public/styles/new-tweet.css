@@ -26,7 +26,7 @@
   }
   
   .new-tweet button[type="submit"] {
-    background-color: #1da1f2;
+    background-color: #980caa;
     color: white;
     font-size: 18px;
     padding: 10px 20px;
@@ -39,4 +39,8 @@
     font-size: 16px;
     margin-left: 10px;
     color: gray;
+  }
+
+  .new-tweet .counter-red {
+    color: red;
   }

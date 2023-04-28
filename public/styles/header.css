@@ -1,16 +1,16 @@
-header {
+
+  .my-header {
     height: calc(100vh - 60px); /* Subtract the height of the nav bar */
     width: 100%;
-    background-color: #0f0a5f; /* Change this to the desired background color */
+    background-color: #593eb3;; /* Change this to the desired background color */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
+    background-image: url("https://www.transparenttextures.com/patterns/dark-tire.png");
     background-size: cover;
     background-position: center;
   }
-  
   header div:first-child {
     display: flex;
     align-items: center;
@@ -33,4 +33,5 @@ header {
     font-size: 32px;
     font-weight: bold;
     margin: 0;
+    color: rgb(236, 228, 228);
   }

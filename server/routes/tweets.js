@@ -18,20 +18,8 @@ module.exports = function(DataHelpers) {
   });
 
   tweetsRoutes.post("/", function(req, res) {
-    // Check if tweet content is empty
     if (!req.body.text) {
-      if (typeof alert !== 'undefined') {
-        alert('Please enter some text');
-      }
       res.status(400).json({ error: 'invalid request: no data in POST body'});
-      return;
-    }
-  
-    if (req.body.text.length > 140) {
-      if (typeof alert !== 'undefined') {
-        alert('Tweet is too long');
-      }
-      res.status(400).json({ error: 'invalid request: tweet is too long'});
       return;
     }
 
